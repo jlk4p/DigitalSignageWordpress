@@ -1,0 +1,34 @@
+To get the theme to work you must perform these additional steps.
+
+After installation of the More Fields plugin you need to configure this
+set of fields for use as the digital signage theme expects them:
+1. Define a Digital Signage (or your preferred name) box in More Fields settings.
+2. Edit this box to add these Fields:
+   a) Field title: Background
+      Custom field key: background
+      Field type: select
+      Values: brown, darkblue, green, lightblue, orange, purple, red
+   b) Field title: Subhead
+   	  Custom field key: subhead
+   	  Field type: text
+   c) Field title: Web Address (please include http://)
+      Custom field key: webaddress
+      Caption: "Optional. Enter a URL where someone can find more information on this 
+      topic. A QR code will be generated and displayed on the screen."
+      Field type: text
+   d) Field title: Image
+      Custom field key: image
+      Caption: "Optional. Use this if you don't like the text alignment of an image 
+      inserted in the post. Use http:// at the beginning for images accessed on other 
+      servers."
+   e) Field title: Image Alignment
+   	  Custom field key: imagealign
+   	  Field type: select
+   	  Values: *left, right
+   	  NOTE: * indicates default value when field is displayed if you prefer right then
+   	  values should be 'left, *right' (without quotes).
+   	  
+After installation of the QR Code Tag plugin, you must make sure that the data directory
+in that plugin is world writeable. From a *nix command line try:
+     chmod 777 /path/to/wordpress/wp-content/plugins/qr-code-tag/data
+
