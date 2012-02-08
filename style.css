@@ -1,3 +1,12 @@
+/*
+Theme Name: DigitalSignageWordPress
+Theme URI: http://nathangjones.com/flatscreens/
+Description: This theme is based on an article written by Nathan G Jones to create digital signage using WordPress. It provides date/time fixed in a leftdock. Three other docks area available to put content in such as event or rss feeds. The main sign area allows for different background colors for items. Optionally you can include subheadings, QR codes, and images on a sign post.
+Author: Nathan G Jones
+Version: 0.9
+Tags: digital-signage, no-sidebars
+*/
+
 /*----------Architecture----------*/
 html{
 height:100%;
@@ -25,20 +34,20 @@ text-align:left;
 /*----------CONTENT----------*/
 @font-face {
 	font-family: 'TradeGothicLTStdLight';
-	src: url('../fonts/TradeGothicLTStd-Light.eot');
-	src: local('../fonts/Trade Gothic LT Std'), local('../fonts/TradeGothicLTStd-Light'), url('../fonts/TradeGothicLTStd-Light.woff') format('woff'), url('../fonts/TradeGothicLTStd-Light.ttf') format('truetype');
+	src: url('fonts/TradeGothicLTStd-Light.eot');
+	src: local('fonts/Trade Gothic LT Std'), local('fonts/TradeGothicLTStd-Light'), url('fonts/TradeGothicLTStd-Light.woff') format('woff'), url('fonts/TradeGothicLTStd-Light.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'TradeGothicLTStdRegular';
-	src: url('../fonts/TradeGothicLTStd.eot');
-	src: local('../fonts/Trade Gothic LT Std'), local('../fonts/TradeGothicLTStd'), url('../fonts/TradeGothicLTStd.woff') format('woff'), url('../fonts/TradeGothicLTStd.ttf') format('truetype');
+	src: url('fonts/TradeGothicLTStd.eot');
+	src: local('fonts/Trade Gothic LT Std'), local('fonts/TradeGothicLTStd'), url('fonts/TradeGothicLTStd.woff') format('woff'), url('fonts/TradeGothicLTStd.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'TradeGothicLTStdBold';
-	src: url('../fonts/TradeGothicLTStd-Bold.eot');
-	src: local('../fonts/Trade Gothic LT Std'), local('../fonts/TradeGothicLTStd-Bold'), url('../fonts/TradeGothicLTStd-Bold.woff') format('woff'), url('../fonts/TradeGothicLTStd-Bold.ttf') format('truetype');
+	src: url('fonts/TradeGothicLTStd-Bold.eot');
+	src: local('fonts/Trade Gothic LT Std'), local('fonts/TradeGothicLTStd-Bold'), url('fonts/TradeGothicLTStd-Bold.woff') format('woff'), url('fonts/TradeGothicLTStd-Bold.ttf') format('truetype');
 }
 #myslides h1{
 font:normal 500 4em 'TradeGothicLTStdBold';
@@ -134,25 +143,25 @@ height:100%;
 width:100%;
 }
 div#myslides div.brown{
-background:url(../background/brown.jpg) 0 0 repeat-x;
+background:url(background/brown.jpg) 0 0 repeat-x;
 }
 div#myslides div.darkblue{
-background:url(../background/darkblue.jpg) 0 0 repeat-x;
+background:url(background/darkblue.jpg) 0 0 repeat-x;
 }
 div#myslides div.green{
-background:url(../background/green.jpg) 0 0 repeat-x;
+background:url(background/green.jpg) 0 0 repeat-x;
 }
 div#myslides div.lightblue{
-background:url(../background/lightblue.jpg) 0 0 repeat-x;
+background:url(background/lightblue.jpg) 0 0 repeat-x;
 }
 div#myslides div.orange{
-background:url(../background/orange.jpg) 0 0 repeat-x;
+background:url(background/orange.jpg) 0 0 repeat-x;
 }
 div#myslides div.purple{
-background:url(../background/purple.jpg) 0 0 repeat-x;
+background:url(background/purple.jpg) 0 0 repeat-x;
 }
 div#myslides div.red{
-background:url(../background/red.jpg) 0 0 repeat-x;
+background:url(background/red.jpg) 0 0 repeat-x;
 }
 
 /*----------DOCK----------*/
