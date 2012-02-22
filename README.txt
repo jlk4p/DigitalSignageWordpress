@@ -4,7 +4,7 @@ Digital signage with Wordpress. It's pretty plugin dependent, but very
 customizable. Minimum plugin requirements are:
  * More Fields (http://wordpress.org/extend/plugins/more-fields/)
  * Post Expirator (http://wordpress.org/extend/plugins/post-expirator/)
- * QR Code Tag (http://wordpress.org/extend/plugins/qr-code-tag/
+ * QR Code Tag (http://wordpress.org/extend/plugins/qr-code-tag/)
  * WordPress Mobile Edition (http://wordpress.org/extend/plugins/wordpress-mobile-edition/)
 
 The entire screen is filled with carousel that, using @malsup's jQuery

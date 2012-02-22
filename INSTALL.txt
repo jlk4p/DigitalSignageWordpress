@@ -2,7 +2,7 @@ To get the theme to work you must perform these additional steps.
 
 After installation of the More Fields plugin you need to configure this
 set of fields for use as the digital signage theme expects them:
-1. Define a Digital Signage (or your preferred name) box in More Fields settings.
+1. Define a Digital Signage Theme Inputs (or your preferred name) box in More Fields settings.
 2. Edit this box to add these Fields:
    a) Field title: Background
       Custom field key: background

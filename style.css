@@ -1,9 +1,11 @@
 /*
-Theme Name: DigitalSignageWordPress
+Theme Name: Digital Signage
 Theme URI: http://nathangjones.com/flatscreens/
-Description: This theme is based on an article written by Nathan G Jones to create digital signage using WordPress. It provides date/time fixed in a leftdock. Three other docks area available to put content in such as event or rss feeds. The main sign area allows for different background colors for items. Optionally you can include subheadings, QR codes, and images on a sign post.
+Description: This theme is based on an article written by Nathan G Jones to create digital signage using WordPress.
 Author: Nathan G Jones
 Version: 0.9
+License: GNU General Public License
+License URI: license.txt
 Tags: digital-signage, no-sidebars
 */
 
@@ -170,9 +172,9 @@ position:absolute;
 z-index:99;
 bottom:0;
 left:0;
-height:15%;
+height:10%;
 width:100%;
-background:-webkit-gradient(linear, left top, left bottom, from(rgba(137,137,137,0.8)), to(rgba(54,54,54,0.8)), color-stop(.3,#333333));
+/*background:-webkit-gradient(linear, left top, left bottom, from(rgba(137,137,137,0.8)), to(rgba(54,54,54,0.8)), color-stop(.3,#333333));
 box-shadow:-2px 0px 12px rgba(0,0,0,.6);
 -moz-box-shadow:-2px 0px 12px rgba(0,0,0,.6);
 -webkit-box-shadow:-2px 0px 12px rgba(0,0,0,.6);
@@ -182,13 +184,14 @@ border-top-left-radius:18px;
 border-top-right-radius:18px;
 -moz-border-radius-topright:18px;
 -webkit-border-top-right-radius:18px;
+*/
 overflow:hidden;
 }
 #dock div{
 float:left;
 display:inline;
 width:31%;
-border-right:dotted .11em #333;
+/*border-right:dotted .11em #333;*/
 height:95%;
 margin:1% 1% 0 0;
 }
@@ -205,7 +208,7 @@ margin:0 0 0 5%;
 border-bottom:dotted .11em #fff;
 }
 #dock p{
-font:normal 500 2em 'TradeGothicLTStdRegular';
+font:normal 500 1em 'TradeGothicLTStdRegular';
 color:#ccc;
 text-shadow:0px 1px 1px #2b2b2b;
 float:left;
