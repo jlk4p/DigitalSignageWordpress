@@ -3,7 +3,7 @@
 <div id="myslides">
 	<?php query_posts("orderby=rand"); $i = 1;  ?>
 	<?php while (have_posts()) : the_post(); ?>
-	   <div class="<?php $key="background"; echo get_post_meta($post->ID, $key, true); ?>">
+	   <div class="<?php $options = get_option('digital_signage_theme_options'); $key="background"; $background_color=trim(get_post_meta($post->ID, $key, true)); echo ($background_color != '') ? $background_color : $options['default_background_color']; ?>">
 			<div class="container">
 				 <h1><?php the_title() ?></h1>
 				 <?php $key="subhead"; if (trim(get_post_meta($post->ID, $key, true)) != '') : ?>

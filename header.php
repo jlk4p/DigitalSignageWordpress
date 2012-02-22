@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
      <meta charset="utf-8" />
-     <meta http-equiv="refresh" content="900">
+     <meta http-equiv="refresh" content="<?php $options = get_option('digital_signage_theme_options'); echo $options['page_auto_refresh_frequency']; ?>">
      <meta http-equiv="pragma" content="nocache">
      <title><?php bloginfo('name'); ?></title>
      <meta name="description" content="<?php bloginfo('description'); ?>" />
@@ -16,7 +16,7 @@
 		   $('#myslides').cycle({
 				fx: 'fade',
 				speed: 1000,
-				timeout: 18000
+				timeout: <?php $options = get_option('digital_signage_theme_options'); echo $options['seconds_between_posts'].'000'; ?>
 		   });
 		   $(".scroll").jCarouselLite({
 				vertical: true,
