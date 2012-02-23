@@ -40,8 +40,8 @@
 				speed:500
 		   });
 		   // Update the date and time every second since client side; this loops indefinitely
-		   updateDateTime();
-		   var timerID = setInterval(updateDateTime,1000);
+		   updateDateTime('<?php $options = get_option('digital_signage_theme_options'); echo $options['show_seconds_in_time']; ?>');
+		   var timerID = setInterval("updateDateTime('<?php $options = get_option('digital_signage_theme_options'); echo $options['show_seconds_in_time']; ?>')",1000);
         });
      </script>
      <?php wp_head() ?>

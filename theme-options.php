@@ -164,6 +164,18 @@ function theme_options_do_page() {
 						<label class="description" for="digital_signage_theme_options[seconds_between_posts]"><?php _e( 'Specify how many seconds a post should display before switching to the next one; allowable values are between 10 and 90 seconds.', 'natejones-digital-signage' ); ?></label>
 					</td>
 				</tr>
+				
+				<?php
+				/**
+				 * Show seconds in time option
+				 */
+				?>
+				<tr valign="top"><th scope="row"><?php _e( 'Show seconds in time', 'natejones-digital-signage' ); ?></th>
+					<td>
+						<input id="digital_signage_theme_options[show_seconds_in_time]" name="digital_signage_theme_options[show_seconds_in_time]" type="checkbox" value="yes" <?php checked( 'yes', $options['show_seconds_in_time'] ); ?> />
+						<label class="description" for="digital_signage_theme_options[show_seconds_in_time]"><?php _e( 'Displays the seconds on the clock', 'natejones-digital-signage' ); ?></label>
+					</td>
+				</tr>
 			</table>
 
 			<p class="submit">
@@ -232,6 +244,11 @@ function theme_options_validate( $input ) {
 	if ( ! array_key_exists( $input['page_auto_refresh_frequency'], $page_auto_refresh_frequency_options ) )
 		$input['page_auto_refresh_frequency'] = $default_options['page_auto_refresh_frequency'];
 
+	// Our checkbox value is either no or yes
+	if ( ! isset( $input['show_seconds_in_time'] ) )
+		$input['show_seconds_in_time'] = 'no';
+	$input['show_seconds_in_time'] = ( $input['show_seconds_in_time'] == 'yes' ? 'yes' : 'no' );
+
 	return $input;
 }
 
@@ -243,7 +260,8 @@ function natejones_digital_signage_get_default_options() {
 	$options = array(
 		'default_background_color' => 'darkblue',
 		'page_auto_refresh_frequency' => '3600',
-		'seconds_between_posts' => '20'
+		'seconds_between_posts' => '20',
+		'show_seconds_in_time' => 'no',
 	);
 	return $options;
 }

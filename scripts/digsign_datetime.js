@@ -1,4 +1,4 @@
-	function updateDateTime() {
+	function updateDateTime(showSeconds) {
 		var month_name = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
 		var current_date_time = new Date();
 		var dateString = month_name[current_date_time.getMonth()]+' '+current_date_time.getDate();
@@ -19,12 +19,14 @@
 			minute = '0'+minute;
 		}
 		var timeString = hour+':'+minute+' '+merideim;
-		// IF YOU WANT SECONDS ON THE CLOCK UNCOMMENT THE LINES BELOW.
-		//var second = current_date_time.getSeconds().toString();
-		//if (second.length < 2) {
-		//	second = '0'+second;
-		//}
-		//timeString = hour+':'+minute+':'+second+' '+merideim;
+		// Seconds on the clock is indicated via a parameter that is set in the theme options.
+		if (showSeconds == 'yes') {
+			var second = current_date_time.getSeconds().toString();
+			if (second.length < 2) {
+				second = '0'+second;
+			}
+			timeString = hour+':'+minute+':'+second+' '+merideim;
+		}
 		$('#dig-sign-time').html(timeString);
 		$('#dig-sign-date').html(dateString);
 	}
